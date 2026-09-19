@@ -1,0 +1,18 @@
+name: NexusAchievements
+version: 1.0.1
+main: com.nexuscraft.nexusachievements.NexusAchievements
+api-version: '1.21'
+author: RealSociety
+softdepend: [NexusHouses, NexusEconomy, NexusFamily, NexusRealms, NexusFrontier, NexusVice, NexusSurvival, NexusVitals, NexusHorror, NexusCombat, NexusLegends, NexusWarbeasts, NexusHatchlings, NexusGiants, NexusFolklore, NexusMigrations, NexusMorality, NexusNPC, NexusPareidolia, NexusPulse, NexusTitles, NexusHats, NexusBudget, NexusEnchants, NexusMap, NexusEvents, NexusScan, NexusThreshold, NexusOracle, NexusRequiem, NexusExpeditions, NexusStarter, NexusGate, NexusDenyBlocks, NexusDrones]
+description: A cross-plugin achievement system for the whole Nexus family -- real milestones from as many Nexus plugins as fit, popping up as a toast styled to look exactly like a real Minecraft advancement (title flash, real toast sound, formatted card), even though nothing here actually touches the real advancement engine.
+
+commands:
+  achievements:
+    description: View your Nexus achievements, or (admin) manage them.
+    usage: /achievements [info <id>|listall|grant <player> <id>|revoke <player> <id>|reload]
+    aliases: [ach, nexusach]
+
+permissions:
+  nexusachievements.admin:
+    description: Grant/revoke achievements and reload NexusAchievements' config.
+    default: op
